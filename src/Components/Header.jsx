@@ -7,14 +7,20 @@ import LOGO from "../Assets/LOGOS/logoMEA.png"
 import { IoIosArrowDown } from "react-icons/io";
 
 
-
 export default function Header() {
     const [active, setActive] = useState(false);
 
     useEffect(() => {
-        window.addEventListener('scroll', isSticky);
+        if (typeof window !== 'undefined') {
+            // Perform localStorage action
+            window.addEventListener('scroll', isSticky);         
+        }
+      
         return () => {
-            window.removeEventListener('scroll', isSticky);
+            if (typeof window !== 'undefined') {
+                // Perform localStorage action
+                window.removeEventListener('scroll', isSticky);
+            }
         };
       });
     /* Method that will fix header after a specific scrollable */
@@ -56,7 +62,7 @@ export default function Header() {
                     <div className="flex  ">
                         <Image 
                             src={LOGO}
-                            className="EMALOGOP w-full pl-10"
+                            className="EMALOGOP  sm:w-[10rem] xl:w-full xl:pl-10"
                             width={100}
                             height={100}
                         />
