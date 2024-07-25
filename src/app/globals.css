@@ -17,10 +17,11 @@
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding-top: 0px;
     padding-bottom: 0px;
-    height: 12vh;
+
   }
   
 /* HamBurger Icon */
+
 .HamBurgerIcon{
     /* z-index: 30; */
 }

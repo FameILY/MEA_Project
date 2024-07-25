@@ -32,11 +32,11 @@ export default function Header() {
     
         return(
             <div className="HeaderContainer  w-full flex flex-col text-white bg-white">
-                <div className="NavContainer w-full h-[5vh] bg-[#313131] hidden  justify-items-center items-center xl:flex ">
-                    <div className="flex w-full justify-center">
+                <div className="NavContainer header-section w-full h-[5vh] bg-[#313131] hidden  justify-between justify-items-center items-center xl:flex ">
+                    <div className="flex  justify-center pl-10">
                         <h4 className="text-white text-[1rem] ">Welcome To Municipal Engineer Association</h4>
                     </div>
-                        <div className=" flex justify-end items-center w-full pr-10 gap-5">
+                        <div className=" flex justify-end items-center  pr-10  gap-5">
                             <div className="flex justify-center gap-1">
                           
                             <div className="flex  justify-center">          
@@ -58,8 +58,8 @@ export default function Header() {
                         </div>
                          
                 </div>
-                <div className="HeaderContent h-[13vh]  header-section w-[100%] bg-white flex justify-start justify-items-center ">
-                    <div className="flex w-[90%] bg-white justify-around justify-items-center h-[12vh] ">
+                <div className="HeaderContent h-[13vh]   w-[100%] bg-white flex justify-start justify-items-center ">
+                    <div className="flex w-[90%] bg-white justify-start justify-items-center h-[12vh] ">
                     <div className="flex  ">
                         <Image 
                             src={LOGO}
@@ -127,8 +127,8 @@ export default function Header() {
 
                     </div>
                     </div>
-                    <div className="HamBurgerIcon flex justify-center h-[13vh] justify-items-center xl:hidden" onChange={() => setActive(!active)}>
-                    <label className="label flex h-[13vh] justify-center justify-items-center" for="check">
+                    <div className="HamBurgerIcon flex justify-center h-[13vh] justify-items-center pr-7 xl:hidden" onChange={() => setActive(!active)}>
+                    <label className="label flex h-[13vh]  justify-center justify-items-center" for="check">
                         <input className="input" type="checkbox" id="check"/> 
                         <span className="span"></span>
                         <span className="span"></span>
