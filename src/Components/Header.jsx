@@ -31,7 +31,7 @@ export default function Header() {
             };
     
         return(
-            <div className="HeaderContainer  w-full flex flex-col text-white">
+            <div className="HeaderContainer  w-full flex flex-col text-white bg-white">
                 <div className="NavContainer w-full h-[5vh] bg-[#313131] hidden  justify-items-center items-center xl:flex ">
                     <div className="flex w-full justify-center">
                         <h4 className="text-white text-[1rem] ">Welcome To Municipal Engineer Association</h4>
@@ -58,7 +58,8 @@ export default function Header() {
                         </div>
                          
                 </div>
-                <div className="HeaderContent h-[13vh]  header-section w-full  bg-white flex justify-around justify-items-center ">
+                <div className="HeaderContent h-[13vh]  header-section w-[100%] bg-white flex justify-start justify-items-center ">
+                    <div className="flex w-[90%] bg-white justify-around justify-items-center h-[12vh] ">
                     <div className="flex  ">
                         <Image 
                             src={LOGO}
@@ -67,15 +68,64 @@ export default function Header() {
                             height={100}
                         />
                     </div>
-                    <div className=" hidden justify-center items-center gap-10 text-black w-full text-[1.1rem] font-medium xl:flex 	" >
-                        <h2 className="cursor-pointer	">Home</h2>
-                        <h3 className="flex  cursor-pointer	">About Us <span className="p-1"><IoIosArrowDown /></span></h3>
-                        <h3 className="flex cursor-pointer	">Members <span className="p-1"><IoIosArrowDown /></span></h3>
+                    <div className=" hidden justify-center  h-[13vh] items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
+                    <h2 className="cursor-pointer">Home</h2>
+                    <div className="relative group h-[13vh] flex items-center">
+                        <h3 className="flex cursor-pointer hover:text-red-400 items-center">
+                            About Us <span className="p-1"><IoIosArrowDown /></span>
+                        </h3>
+                        <ul className="absolute top-full left-1/2 transform -translate-x-1/2  w-60 flex flex-col bg-white border border-gray-200 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out z-50">
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 1</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 2</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 3</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 4</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 5</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 6</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="relative group h-[13vh] flex items-center">
+                        <h3 className="flex cursor-pointer hover:text-red-400 items-center">
+                            Members<span className="p-1"><IoIosArrowDown /></span>
+                        </h3>
+                        <ul className="absolute top-full left-1/2 transform -translate-x-1/2  w-60 flex flex-col bg-white border border-gray-200 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out z-50">
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 1</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 2</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 3</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 4</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 5</a>
+                            </li>
+                            <li className="border-b border-gray-200">
+                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 6</a>
+                            </li>
+                        </ul>
+                    </div>
                         <h3 className="cursor-pointer	">Events</h3>
                         <h3 className="cursor-pointer	">Gallery</h3>
                         <h3 className="cursor-pointer	">Contact Us</h3>
                         <h3 className="cursor-pointer	">Member Registration</h3>
 
+                    </div>
                     </div>
                     <div className="HamBurgerIcon flex justify-center h-[13vh] justify-items-center xl:hidden" onChange={() => setActive(!active)}>
                     <label className="label flex h-[13vh] justify-center justify-items-center" for="check">
