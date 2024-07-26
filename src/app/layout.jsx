@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: [ 'latin'] })
 
 export const metadata = {
   title: 'Muncipal Engineer Association',
