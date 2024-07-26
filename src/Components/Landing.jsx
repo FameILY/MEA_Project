@@ -20,9 +20,9 @@ export default function Header() {
                     className=" w-[100%] h-[100%]  brightness-50 object-cover"
                     />
                 </div>
-                <div className=" w-[100%] h-[25vh] bg-[#232323]  flex justify-center">
-                    <div className="w-[90%] h-[30vh] bg-white mt-[-8rem] z-10 flex justify-center   text-center    ">
-                        <div className=" flex justify-center w-[30%] items-center text-center gap-2">
+                <div className=" w-[100%] h-[25vh] bg-white  flex justify-center">
+                    <div className="w-[90%] h-[25vh] bg-white mt-[-6rem] z-10 flex   shadow-xl  text-center    ">
+                        <div className=" flex justify-center w-[40%] items-center text-center gap-2">
                             <h1 className="text-[3rem] text-[#c72626]   font-bold ">90</h1><h3 className="text-[0.8rem] w-14">YEARS FOUNDATION</h3>
                         </div>
                         <div className=" flex justify-center w-[30%] items-center text-center gap-2">
@@ -31,14 +31,14 @@ export default function Header() {
                         <div className=" flex justify-center w-[30%] items-center text-center gap-2">
                             <h1 className="text-[3rem] text-[#c72626]  font-bold">25</h1><h3 className="text-[0.8rem]  w-14">Total SEMINARS</h3>
                         </div>
-                        <div className=" flex justify-center w-[30%] items-center text-center gap-2">
+                        <div className=" flex justify-center w-[40%] items-center text-center gap-2">
                             <h1 className="text-[3rem] text-[#c72626]  font-bold">525</h1><h3 className="text-[0.8rem]  w-14">SUCCESS PROGRAM</h3>
                         </div>
                     </div>
 
                 </div>
-                <div className="w-full h-[70vh] bg-[#232323] flex justify-center ">
-                    <div className="w-[90%] text-white flex justify-center gap-5">
+                <div className="w-full h-[70vh] bg-white flex justify-center ">
+                    <div className="w-[90%] text-black flex justify-center gap-5">
                         <div className=" w-[30%] ">
                             <h1 className="text-[1.8rem]">WELCOME TO MUNCIPAL ENGINEERS ASSOCIATION</h1>
                             <h5 className="mt-5">The struggles undertaken by the Municipal Engineers Association have yielded numerous results. For instance,
