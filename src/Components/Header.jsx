@@ -31,16 +31,16 @@ export default function Header() {
             };
     
         return(
-            <div className="HeaderContainer  w-full flex flex-col text-white bg-white">
-                <div className="NavContainer header-section w-full h-[5vh] bg-[#313131] hidden  justify-between justify-items-center items-center xl:flex ">
+            <div className="HeaderContainer  shadow-lg  w-full flex flex-col text-white bg-white">
+                <div className="NavContainer header-section w-full h-[4vh] bg-[#c72626] hidden  justify-between justify-items-center items-center xl:flex ">
                     <div className="flex  justify-center pl-10">
-                        <h4 className="text-white text-[1rem] ">Welcome To Municipal Engineer Association</h4>
+                        <h4 className="text-white text-[0.8rem] ">Welcome To Municipal Engineer Association</h4>
                     </div>
                         <div className=" flex justify-end items-center  pr-10  gap-5">
                             <div className="flex justify-center gap-1">
                           
                             <div className="flex  justify-center">          
-                            <span className="p-1"><FaLocationDot /></span> <h5 className="text-white text-[0.9rem]"> example@gmail.com</h5>
+                            <span className="p-1"><FaLocationDot /></span> <h5 className="text-white text-[0.8rem]"> example@gmail.com</h5>
                             </div>
                             </div>
                             <div className="flex gap-1">
@@ -51,7 +51,7 @@ export default function Header() {
                                 height={50}
                             /> */}
                             <div className="flex  justify-center">          
-                            <span className="p-1 "><IoCall /></span>  <h5 className="text-white text-[0.9rem]">+ 91 242342523</h5>
+                            <span className="p-1 "><IoCall /></span>  <h5 className="text-white text-[0.8rem]">+ 91 242342523</h5>
                             </div>
                             </div>
                           
@@ -68,7 +68,7 @@ export default function Header() {
                             height={100}
                         />
                     </div>
-                    <div className=" hidden justify-center  h-[13vh] items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
+                    <div className=" hidden justify-center h-[13vh] items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
                     <h2 className="cursor-pointer">Home</h2>
                     <div className="relative group h-[13vh] flex items-center">
                         <h3 className="flex cursor-pointer hover:text-red-400 items-center">
