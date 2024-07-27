@@ -13,7 +13,6 @@ import { FaBook } from "react-icons/fa6";
 import { FaLandmark } from "react-icons/fa6";
 import { FaPerson } from "react-icons/fa6";
 import { FaLandmarkDome } from "react-icons/fa6";
-
 import OnScrollAnimation from "./OnScrollAnimmation";
 
 const nunito = Nunito 
@@ -27,8 +26,8 @@ export default function Header() {
      useEffect(()=> {
         if (typeof document !== 'undefined') {
           // will run in client's browser only
-          var hiddenElements1 = document.querySelectorAll(".hidden");
-          var hiddenElements = document.querySelectorAll(".hidden3");
+          var hiddenElements1 = document.querySelectorAll(".hidden3");
+          var hiddenElements = document.querySelectorAll(".hidden2");
         //   var hiddenElement2 = document.querySelectorAll(".hidden2");
         //   var hiddenElement2 = document.querySelectorAll(".hidden3");
           // console.log(hiddenElements);
@@ -65,7 +64,7 @@ export default function Header() {
                 </div>
                 <div className="w-full h-[200vh] md:h-[180vh]  xl:h-[90vh] bg-white flex justify-center  ">
                     <div className="w-[90%] h-[70vh] text-black flex items-center xl:justify-around xl:items-start gap-20 md:gap-10 xl:gap-2 flex-col xl:flex-row">
-                        <div className=" w-[100%] xl:w-[35%] flex  justify-center flex-col xl:block hidden3 ">
+                        <div className=" w-[100%] xl:w-[35%] flex  justify-center flex-col xl:block hidden2 ">
                             <h1 className={`${nunito.className} text-[2rem]  font-bold `}>WELCOME TO MUNCIPAL ENGINEERS ASSOCIATION</h1>
                             <div className="w-[87%]">
                             <h5 className="mt-5 ">The struggles undertaken by the Municipal Engineers Association have yielded numerous results. For instance,
@@ -73,13 +72,13 @@ export default function Header() {
                             </div>
                             <button className=" py-4 px-4 rounded-md mt-5 bg-[#c72626]  text-white">Learn More</button>
                         </div>
-                        <div className="w-[100%]  xl:w-[30%] md:h-[50%] xl:h-[90%] hidden3 ">
+                        <div className="w-[100%]  xl:w-[30%] md:h-[50%] xl:h-[90%] hidden2 ">
                            <Image src={heromage} 
                            className="w-[100%] h-[100%] xl:h-[100%] object-fit  "
                         
                            />
                         </div>
-                        <div className=" w-[100%]  xl:w-[28%] md:h-[100%]  hidden3">
+                        <div className=" w-[100%]  xl:w-[28%] md:h-[100%]  hidden2">
                         <Image src={IMGs} 
                            className=" w-[100%] h-[100%]  xl:h-[90%] object-fit "
                          
@@ -89,7 +88,7 @@ export default function Header() {
                 </div>
                 <div className="w-full h-[350vh] px-10 md:h-[200vh] lg:h-[150vh] xl:h-[100vh] flex justify-center x ">
                     <div className=" w-[100%] md:w-full xl:w-[85%] h-[90vh] flex justify-around items-center  flex-wrap md:gap-10 xl:gap-2  ">
-                    <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
+                    <div className="  hidden2 h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
                                  <FaLandmarkDome  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
@@ -105,8 +104,8 @@ export default function Header() {
                             <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
                         </div>
 
-                        </div>
-                        <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
+                        </div> 
+                        <div className="hidden2  h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
                                  <FaRegBuilding  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
@@ -123,7 +122,7 @@ export default function Header() {
                         </div>
 
                         </div>
-                        <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
+                        <div className=" hidden2 h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
                                  <FaBook  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
@@ -140,7 +139,7 @@ export default function Header() {
                         </div>
 
                         </div>
-                        <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
+                        <div className=" hidden3 h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className="hover:animate-pulse hover:shadow-xl  h-[10vh] uration-300 ease-in-out ">
                                  <FaPerson  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
@@ -157,7 +156,7 @@ export default function Header() {
                         </div>
 
                         </div>
-                        <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
+                        <div className=" hidden3 h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
                                  <FaLandmark  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
@@ -174,7 +173,7 @@ export default function Header() {
                         </div>
 
                         </div>
-                        <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
+                        <div className=" hidden3 h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
                                  <FaCube  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />

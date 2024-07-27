@@ -17,13 +17,14 @@
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding-top: 0px;
     padding-bottom: 0px;
+    display: flex;
 
   }
   
 /* HamBurger Icon */
 
 .HamBurgerIcon{
-    /* z-index: 30; */
+    z-index: 30;
 }
 .label{
     display:flex;
@@ -119,7 +120,7 @@
     opacity:0;
     /* filter:blur(5px); */
     transform: translateX(-50%);
-    transition:all 1s;
+    transition:all 2s;
   }
 
 .hidden3{

@@ -6,12 +6,25 @@ import { IoCall } from "react-icons/io5";
 import LOGO from "../Assets/LOGOS/logoMEA.png"
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
+import OnScrollAnimation from "../Components/OnScrollAnimmation";
 
 
 export default function Header() {
     const [active, setActive] = useState(false);
 
+
     useEffect(() => {
+
+        if (typeof document !== 'undefined') {
+            // will run in client's browser only
+            var hiddenElements1 = document.querySelectorAll(".hidden");
+          //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+          //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+            // console.log(hiddenElements);
+             OnScrollAnimation(hiddenElements1)
+          //    OnScrollAnimation(hiddenElement2)
+          }
+
         if (typeof window !== 'undefined') {
             // Perform localStorage action
             window.addEventListener('scroll', isSticky);         
@@ -33,7 +46,7 @@ export default function Header() {
     
         return(
             <div className="HeaderContainer  shadow-lg  w-full flex flex-col text-white bg-white">
-                <div className="NavContainer header-section w-full h-[4vh] bg-[#c72626] hidden  justify-between justify-items-center items-center xl:flex ">
+                <div className="NavContainer hidden  header-section w-full h-[4vh] bg-[#c72626]   justify-between justify-items-center items-center xl:flex ">
                     <div className="flex  justify-center pl-10">
                         <h4 className="text-white text-[0.8rem] ">Welcome To Municipal Engineer Association</h4>
                     </div>
@@ -69,7 +82,7 @@ export default function Header() {
                             height={100}
                         />
                     </div>
-                    <div className=" hidden justify-center h-[13vh] items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
+                    <div className=" justify-center h-[13vh] items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
                         <Link href={'/'}>
                             <h2 className="cursor-pointer">Home</h2>
                         </Link>
