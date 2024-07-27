@@ -17,7 +17,7 @@ export default function Header() {
 
         if (typeof document !== 'undefined') {
             // will run in client's browser only
-            var hiddenElements1 = document.querySelectorAll(".hidden");
+            var hiddenElements1 = document.querySelectorAll(".hidden1");
           //   var hiddenElement2 = document.querySelectorAll(".hidden2");
           //   var hiddenElement2 = document.querySelectorAll(".hidden3");
             // console.log(hiddenElements);
@@ -45,7 +45,7 @@ export default function Header() {
             };
     
         return(
-            <div className="HeaderContainer  shadow-lg  w-full flex flex-col text-white bg-white">
+            <div className="HeaderContainer   shadow-lg  w-full flex flex-col text-white bg-white">
                 <div className="NavContainer hidden  header-section w-full h-[4vh] bg-[#c72626]   justify-between justify-items-center items-center xl:flex ">
                     <div className="flex  justify-center pl-10">
                         <h4 className="text-white text-[0.8rem] ">Welcome To Municipal Engineer Association</h4>
@@ -82,11 +82,11 @@ export default function Header() {
                             height={100}
                         />
                     </div>
-                    <div className=" justify-center h-[13vh] items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
+                    <div className=" justify-center h-[13vh] hidden1 sm:flex items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
                         <Link href={'/'}>
-                            <h2 className="cursor-pointer">Home</h2>
+                            <h2 className="cursor-pointer hidden xl:flex">Home</h2>
                         </Link>
-                    <div className="relative group h-[13vh] flex items-center">
+                    <div className="relative group h-[13vh]  items-center hidden xl:flex">
                         <h3 className="flex cursor-pointer hover:text-red-400 items-center">
                             About Us <span className="p-1"><IoIosArrowDown /></span>
                         </h3>
@@ -111,7 +111,7 @@ export default function Header() {
                             </li>
                         </ul>
                     </div>
-                    <div className="relative group h-[13vh] flex items-center">
+                    <div className="relative group h-[13vh]  items-center hidden xl:flex">
                         <h3 className="flex cursor-pointer hover:text-red-400 items-center">
                             Members<span className="p-1"><IoIosArrowDown /></span>
                         </h3>
@@ -136,13 +136,13 @@ export default function Header() {
                             </li>
                         </ul>
                     </div>
-                        <h3 className="cursor-pointer	">Events</h3>
-                        <h3 className="cursor-pointer	">Gallery</h3>
+                        <h3 className="cursor-pointer	hidden xl:flex">Events</h3>
+                        <h3 className="cursor-pointer	hidden xl:flex">Gallery</h3>
                         <Link href={'/contact-us'}>
-                        <h3 className="cursor-pointer	">Contact Us</h3>
+                        <h3 className="cursor-pointer	hidden xl:flex">Contact Us</h3>
                         </Link>
                         <Link href={'/members-registration'}>
-                        <h3 className="cursor-pointer	">Member Registration</h3>
+                        <h3 className="cursor-pointer	hidden xl:flex">Member Registration</h3>
                         </Link>
 
                     </div>

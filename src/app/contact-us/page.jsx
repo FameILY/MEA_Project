@@ -7,15 +7,18 @@ export default function page() {
     if (typeof document !== 'undefined') {
       // will run in client's browser only
       var hiddenElements1 = document.querySelectorAll(".hidden3");
-      var hiddenElements = document.querySelectorAll(".hidden2");
-      var hiddenElements2 = document.querySelectorAll(".hidden");
+      var hiddenElements4 = document.querySelectorAll(".hidden4");
+      var hiddenElements2 = document.querySelectorAll(".hidden2");
+      var hiddenElements3 = document.querySelectorAll(".hidden");
 
     //   var hiddenElement2 = document.querySelectorAll(".hidden2");
     //   var hiddenElement2 = document.querySelectorAll(".hidden3");
       // console.log(hiddenElements);
        OnScrollAnimation(hiddenElements1)
-       OnScrollAnimation(hiddenElements)
+       OnScrollAnimation(hiddenElements4)
        OnScrollAnimation(hiddenElements2)
+        OnScrollAnimation(hiddenElements3)
+
 
        //    OnScrollAnimation(hiddenElement2)
     }
@@ -30,7 +33,7 @@ export default function page() {
         </section>
         <section className="md:mx-32 ">
           <section className="flex md:flex-row flex-col w-full justify-center items-center my-20">
-            <div className="hidden3 h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
+            <div className="hidden2 h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
                 <h1 className="text-3xl m-6">Call us</h1>
                 <p className="text-lg">(022) 23098063</p>
             </div>
@@ -38,12 +41,12 @@ export default function page() {
                 <h1 className="text-3xl m-6">Visit us here</h1>
                 <p className="text-lg">237-239, Bal Dandavate Smruti, Bawla Masjid, Joshi Marg, Dilai Road, Mumbai-400013</p>
             </div>
-            <div className=" hidden3 h-60 md:w-96 w-80 bg-[#c72626] m-5">
+            <div className=" hidden4 h-60 md:w-96 w-80 bg-[#c72626] m-5">
 
             </div>
           </section>
-          <section className="flex flex-col md:flex-row w-full justify-around items-center my-20">
-            <div className="flex-1 p-6 bg-white rounded-lg mx-4 hidden3">
+          <section className="flex flex-col md:flex-row w-full justify-around items-center hidden3 my-20">
+            <div className="flex-1 p-6 bg-white rounded-lg mx-4 ">
               <h1 className="text-2xl font-bold mb-4">Leave a Reply</h1>
               <p className="mb-6">
                 We are waiting for you at our office in Mumbai or on the way.

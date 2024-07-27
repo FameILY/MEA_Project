@@ -9,6 +9,12 @@ export default function OnScrollAnimation(element) {
               else if(element[0].className == 'hidden2' ){
                 entry.target.classList.add('rightSlider');
               }
+              else if(element[0].className == 'hidden3' ){
+                entry.target.classList.add('rightSlider');
+              }
+              else if(element[0].className == 'hidden4' ){
+                entry.target.classList.add('rightSlider');
+              }
               else{
                 entry.target.classList.add('showleftSlider');
               }

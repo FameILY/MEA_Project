@@ -28,11 +28,16 @@ export default function Header() {
           // will run in client's browser only
           var hiddenElements1 = document.querySelectorAll(".hidden3");
           var hiddenElements = document.querySelectorAll(".hidden2");
-        //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+          var hiddenElement2 = document.querySelectorAll(".hidden1");
+          var hiddenElement3= document.querySelectorAll(".hidden4");
+
         //   var hiddenElement2 = document.querySelectorAll(".hidden3");
           // console.log(hiddenElements);
            OnScrollAnimation(hiddenElements1)
            OnScrollAnimation(hiddenElements)
+           OnScrollAnimation(hiddenElement2)
+           OnScrollAnimation(hiddenElement3)
+
         //    OnScrollAnimation(hiddenElement2)
         }
         },[]);
@@ -45,7 +50,7 @@ export default function Header() {
                     className=" w-[100%] h-[100%]  brightness-50 object-cover"
                     />
                 </div>
-                <div className=" w-[100%] h-[100vh] md:h-[30vh] xl:h-[25vh] bg-white  flex justify-center">
+                <div className=" hidden1 w-[100%] h-[100vh] md:h-[30vh] xl:h-[25vh] bg-white  flex justify-center">
                     <div className="w-[100%] h-[100vh] sm:h-[30vh] md:h-[30vh] bg-white mt-[-6rem] z-10 flex  justify-center flex-wrap xl:h-[25vh] gap-5 xl:flex-nowrap shadow-xl xl:w-[90%] text-center    ">
                         <div className=" flex justify-center  items-center px-10 py-5  text-center gap-2">
                             <h1 className="text-[2.5rem] text-[#c72626]  xl:text-[3rem] font-bold ">90</h1><h3 className="text-[0.7rem] w-14 xl:text-[0.8rem]">YEARS FOUNDATION</h3>
@@ -72,13 +77,13 @@ export default function Header() {
                             </div>
                             <button className=" py-4 px-4 rounded-md mt-5 bg-[#c72626]  text-white">Learn More</button>
                         </div>
-                        <div className="w-[100%]  xl:w-[30%] md:h-[50%] xl:h-[90%] hidden2 ">
+                        <div className="w-[100%]  xl:w-[30%] md:h-[50%] xl:h-[90%] hidden3 ">
                            <Image src={heromage} 
                            className="w-[100%] h-[100%] xl:h-[100%] object-fit  "
                         
                            />
                         </div>
-                        <div className=" w-[100%]  xl:w-[28%] md:h-[100%]  hidden2">
+                        <div className=" w-[100%]  xl:w-[28%] md:h-[100%]  hidden4">
                         <Image src={IMGs} 
                            className=" w-[100%] h-[100%]  xl:h-[90%] object-fit "
                          
@@ -193,7 +198,7 @@ export default function Header() {
 
                     </div>
                 </div>
-                <section className="w-full min-h-[250vh]  md:min-h-[140vh] lg:min-h-[120vh]  flex justify-start items-center flex-col gap-5">
+                <section className=" hidden1 w-full min-h-[270vh]  md:min-h-[140vh] lg:min-h-[120vh]  flex justify-start items-center flex-col gap-5">
                     <div className="w-[90%] h-[15vh] bg-[#c72626] mt-10">
                     </div>
                     <div className="mt-10 h-[30vh] w-full flex items-center flex-col">
@@ -201,7 +206,7 @@ export default function Header() {
                     </div>
                     <div className=" w-[100%] flex justify-center h-[30vh]  ">
                         <div className=" w-[90%] md:w-full xl:w-full flex justify-center xl:justify-center gap-20 md:flex-col xl:flex-row">
-                            <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col   list-disc opacity-[60%]" >
+                            <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col hidden2   list-disc opacity-[60%]" >
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
 
@@ -231,7 +236,7 @@ export default function Header() {
 
 
                             </div>
-                            <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col   list-disc opacity-[60%]" >
+                            <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col hidden3  list-disc opacity-[60%]" >
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
 
@@ -273,7 +278,7 @@ export default function Header() {
                         <h1 className="text-[2.5rem]">Events</h1>
                     </div>
                     <div className="w-[90%] flex mt-10 gap-10">
-                    <div className="relative w-full max-w-sm overflow-hidden shadow-lg cursor-pointer group">
+                    <div className="relative w-full max-w-sm overflow-hidden shadow-lg cursor-pointer group hidden3 ">
                         <Image
                             className="w-full h-[50vh] object-cover transition-transform duration-300 transform group-hover:scale-110"
                             src={IMGs}
@@ -286,7 +291,7 @@ export default function Header() {
                             </div>
                         </div>
                         </div>  
-                        <div className="relative w-full max-w-sm overflow-hidden shadow-lg cursor-pointer group">
+                        <div className="relative w-full max-w-sm overflow-hidden shadow-lg cursor-pointer hidden4 group">
                         <Image
                             className="w-full h-[50vh] object-cover transition-transform duration-300 transform group-hover:scale-110"
                             src={heromage}

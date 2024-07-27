@@ -1,7 +1,29 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import OnScrollAnimation from '../../../Components/OnScrollAnimmation';
 
 export default function RegisterForm() {
+  useEffect(()=> {
+    if (typeof document !== 'undefined') {
+      // will run in client's browser only
+      var hiddenElements1 = document.querySelectorAll(".hidden3");
+      var hiddenElements4 = document.querySelectorAll(".hidden4");
+      var hiddenElements2 = document.querySelectorAll(".hidden2");
+      var hiddenElements3 = document.querySelectorAll(".hidden1");
+
+    //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+    //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+      // console.log(hiddenElements);
+       OnScrollAnimation(hiddenElements1)
+       OnScrollAnimation(hiddenElements4)
+       OnScrollAnimation(hiddenElements2)
+        OnScrollAnimation(hiddenElements3)
+
+
+       //    OnScrollAnimation(hiddenElement2)
+    }
+    },[]);
+
   const [form, setForm] = useState({
     email: '',
     fullname: '',
@@ -32,7 +54,7 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen hidden1 ">
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Member Register</h2>
         <div className="mb-4">
