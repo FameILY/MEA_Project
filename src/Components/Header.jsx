@@ -92,22 +92,22 @@ export default function Header() {
                         </h3>
                         <ul className="absolute top-full left-1/2 transform -translate-x-1/2  w-60 flex flex-col bg-white border border-gray-200 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out z-50">
                             <li className="border-b border-gray-200">
-                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Background of MEA</Link>
+                                <Link href="background-of-mea" className="block px-6 py-3 hover:bg-gray-100">Background of MEA</Link>
                             </li>
                             <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 2</a>
+                                <Link href="objectives" className="block px-6 py-3 hover:bg-gray-100">Objectives</Link>
                             </li>
                             <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 3</a>
+                                <Link href="recognition-and-affiliation" className="block px-6 py-3 hover:bg-gray-100">Recognition and Affiliation</Link>
                             </li>
                             <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 4</a>
+                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Option 4</Link>
                             </li>
                             <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 5</a>
+                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Option 5</Link>
                             </li>
                             <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 6</a>
+                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Option 6</Link>
                             </li>
                         </ul>
                     </div>
