@@ -116,7 +116,7 @@ export default function Header() {
                                  <FaRegBuilding  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
+                                <h3 className="text-[1.2rem] ml-2">Objective of  Municipal Engineer Association</h3>
                             </div>
                         </div>
                         <div className="mt-5">
@@ -133,7 +133,7 @@ export default function Header() {
                                  <FaBook  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
+                                <h3 className="text-[1.2rem] ml-2"> Of The India Society Of Engineers</h3>
                             </div>
                         </div>
                         <div className="mt-5">

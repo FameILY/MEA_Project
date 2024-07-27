@@ -82,7 +82,7 @@ export default function Header() {
                             height={100}
                         />
                     </div>
-                    <div className=" justify-center h-[13vh] hidden1 sm:flex items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
+                    <div className=" justify-center h-[13vh]  sm:flex items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
                         <Link href={'/'}>
                             <h2 className="cursor-pointer hidden xl:flex">Home</h2>
                         </Link>
