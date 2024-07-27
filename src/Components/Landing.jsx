@@ -16,8 +16,6 @@ const nunito = Nunito
     weight:['700']
 
 })
-
-
 export default function Header() {
    
     

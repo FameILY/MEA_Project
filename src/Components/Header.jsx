@@ -5,6 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import LOGO from "../Assets/LOGOS/logoMEA.png"
 import { IoIosArrowDown } from "react-icons/io";
+import Link from "next/link";
 
 
 export default function Header() {
@@ -122,7 +123,9 @@ export default function Header() {
                     </div>
                         <h3 className="cursor-pointer	">Events</h3>
                         <h3 className="cursor-pointer	">Gallery</h3>
+                        <Link href={'/contact-us'}>
                         <h3 className="cursor-pointer	">Contact Us</h3>
+                        </Link>
                         <h3 className="cursor-pointer	">Member Registration</h3>
 
                     </div>
