@@ -2,7 +2,7 @@ export default function page() {
   return (
     <>
       <main>
-        <section className="h-44 bg-customGray flex justify-center items-center flex-col text-white">
+        <section className="h-44 bg-[#232323] flex justify-center items-center flex-col text-white">
           <h1 className="text-5xl p-3">Contact Us</h1>
           <p className="text-lg p-3"> Home / Contact Us</p>
         </section>
@@ -10,7 +10,7 @@ export default function page() {
           <section className="flex md:flex-row flex-col w-full justify-center items-center my-20">
             <div className="h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
                 <h1 className="text-3xl m-6">Call us</h1>
-                <p className="text-lg">(002) 23098063</p>
+                <p className="text-lg">(022) 23098063</p>
             </div>
             <div className="h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
                 <h1 className="text-3xl m-6">Visit us here</h1>

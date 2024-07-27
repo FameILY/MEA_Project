@@ -70,14 +70,16 @@ export default function Header() {
                         />
                     </div>
                     <div className=" hidden justify-center h-[13vh] items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
-                    <h2 className="cursor-pointer">Home</h2>
+                        <Link href={'/'}>
+                            <h2 className="cursor-pointer">Home</h2>
+                        </Link>
                     <div className="relative group h-[13vh] flex items-center">
                         <h3 className="flex cursor-pointer hover:text-red-400 items-center">
                             About Us <span className="p-1"><IoIosArrowDown /></span>
                         </h3>
                         <ul className="absolute top-full left-1/2 transform -translate-x-1/2  w-60 flex flex-col bg-white border border-gray-200 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out z-50">
                             <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 1</a>
+                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Background of MEA</Link>
                             </li>
                             <li className="border-b border-gray-200">
                                 <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 2</a>
@@ -126,7 +128,9 @@ export default function Header() {
                         <Link href={'/contact-us'}>
                         <h3 className="cursor-pointer	">Contact Us</h3>
                         </Link>
+                        <Link href={'/members-registration'}>
                         <h3 className="cursor-pointer	">Member Registration</h3>
+                        </Link>
 
                     </div>
                     </div>

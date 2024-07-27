@@ -13,7 +13,7 @@ import { FaCube } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa6";
 import { FaLandmark } from "react-icons/fa6";
 import { FaPerson } from "react-icons/fa6";
-import OnScrollAnimation from "@/app/OnScrollAnimmation";
+import OnScrollAnimation from "./OnScrollAnimmation";
 
 const nunito = Nunito 
 ({ 
