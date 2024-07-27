@@ -10,7 +10,7 @@ export default function page() {
           <section className="flex md:flex-row flex-col w-full justify-center items-center my-20">
             <div className="h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
                 <h1 className="text-3xl m-6">Call us</h1>
-                <p className="text-lg">23098063</p>
+                <p className="text-lg">(002) 23098063</p>
             </div>
             <div className="h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
                 <h1 className="text-3xl m-6">Visit us here</h1>
