@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import { FaLandmarkDome } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import BlackANDWHITE from "../Assets/IMGs/BlackANDWHITE.png"
 import heromage from "../Assets/IMGs/hero-image.png"
@@ -13,12 +12,10 @@ import { FaCube } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa6";
 import { FaLandmark } from "react-icons/fa6";
 import { FaPerson } from "react-icons/fa6";
-<<<<<<< HEAD
-import OnScrollAnimation from "../app/OnScrollAnimmation"
-=======
+import { FaLandmarkDome } from "react-icons/fa6";
+
 import OnScrollAnimation from "./OnScrollAnimmation";
 
->>>>>>> d903ad35b2a2e109d95f5b3194f75d45959a7e8a
 const nunito = Nunito 
 ({ 
     subsets: [ 'latin'] ,
@@ -92,60 +89,54 @@ export default function Header() {
                 </div>
                 <div className="w-full h-[350vh] px-10 md:h-[200vh] lg:h-[150vh] xl:h-[100vh] flex justify-center x ">
                     <div className=" w-[100%] md:w-full xl:w-[85%] h-[90vh] flex justify-around items-center  flex-wrap md:gap-10 xl:gap-2  ">
-                    <div className="h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[100%] md:w-[22rem] xl:w-[22rem] flex justify-start">
-                        <div className=" flex ">
-                            <div className=" hover:shadow-xl hover:animate-pulse  h-[10vh] duration-300 ease-in-out ">
-                                 <FaLandmarkDome  style={{ color:"#c72626",fontSize: '6rem', background:"white", padding:"1.2rem"}} />
-                            </div>
-                        </div>
-                        <div className="flex flex-col">
-                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
-                            </div>
-                        <div className="mt-5">
-                            <p>Our Freedom movement gathered momentum in the early thirties and brought about a new awakening amongst the Freedom seeking inteligentsia.</p>
-                        </div>
-                        <div>
-                            <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
-                        </div>
-                        </div>
-
-                        </div>
-                        <div className="h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex justify-start">
+                    <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
-                                 <FaRegBuilding  style={{color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                                 <FaLandmarkDome  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
-                        </div>
-                        <div className="flex flex-col">
-                             <div className="flex h-[12vh]  py-10 items-center">
+                            <div className="flex h-[12vh]  py-10 items-center">
                                 <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
                             </div>
+                        </div>
                         <div className="mt-5">
                             <p>Our Freedom movement gathered momentum in the early thirties and brought about a new awakening amongst the Freedom seeking inteligentsia.</p>
-                        </div>
+                        </div>  
                         <div>
                             <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
-                        </div>
                         </div>
 
                         </div>
-                        <div className="h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex justify-start">
+                        <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
-                            <div className="hover:animate-pulse  hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
-                                 <FaBook  style={{ color:"#c72626",fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                            <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
+                                 <FaRegBuilding  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
-                        </div>
-                          <div className="flex flex-col">
-                             <div className="flex h-[12vh]  py-10 items-center">
+                            <div className="flex h-[12vh]  py-10 items-center">
                                 <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
                             </div>
+                        </div>
                         <div className="mt-5">
                             <p>Our Freedom movement gathered momentum in the early thirties and brought about a new awakening amongst the Freedom seeking inteligentsia.</p>
-                        </div>
+                        </div>  
                         <div>
                             <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
                         </div>
+
+                        </div>
+                        <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
+                        <div className=" flex ">
+                            <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
+                                 <FaBook  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                            </div>
+                            <div className="flex h-[12vh]  py-10 items-center">
+                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
+                            </div>
+                        </div>
+                        <div className="mt-5">
+                            <p>Our Freedom movement gathered momentum in the early thirties and brought about a new awakening amongst the Freedom seeking inteligentsia.</p>
+                        </div>  
+                        <div>
+                            <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
                         </div>
 
                         </div>
