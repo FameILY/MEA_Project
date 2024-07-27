@@ -13,7 +13,7 @@ import { FaCube } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa6";
 import { FaLandmark } from "react-icons/fa6";
 import { FaPerson } from "react-icons/fa6";
-
+import OnScrollAnimation from "@/app/OnScrollAnimmation";
 
 const nunito = Nunito 
 ({ 
@@ -21,10 +21,21 @@ const nunito = Nunito
     weight:['700']
 
 })
-
-
 export default function Header() {
-   
+     //On Scroll Animation Function
+     useEffect(()=> {
+        if (typeof document !== 'undefined') {
+          // will run in client's browser only
+          var hiddenElements1 = document.querySelectorAll(".hidden");
+          var hiddenElements = document.querySelectorAll(".hidden3");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+          // console.log(hiddenElements);
+           OnScrollAnimation(hiddenElements1)
+           OnScrollAnimation(hiddenElements)
+        //    OnScrollAnimation(hiddenElement2)
+        }
+        },[]);
     
         return(
             <div className=" w-[100%] bg-white">
@@ -53,7 +64,7 @@ export default function Header() {
                 </div>
                 <div className="w-full h-[200vh] md:h-[180vh]  xl:h-[90vh] bg-white flex justify-center  ">
                     <div className="w-[90%] h-[70vh] text-black flex items-center xl:justify-around xl:items-start gap-20 md:gap-10 xl:gap-2 flex-col xl:flex-row">
-                        <div className=" w-[100%] xl:w-[35%] flex  justify-center flex-col xl:block ">
+                        <div className=" w-[100%] xl:w-[35%] flex  justify-center flex-col xl:block hidden3 ">
                             <h1 className={`${nunito.className} text-[2rem]  font-bold `}>WELCOME TO MUNCIPAL ENGINEERS ASSOCIATION</h1>
                             <div className="w-[87%]">
                             <h5 className="mt-5 ">The struggles undertaken by the Municipal Engineers Association have yielded numerous results. For instance,
@@ -61,13 +72,13 @@ export default function Header() {
                             </div>
                             <button className=" py-4 px-4 rounded-md mt-5 bg-[#c72626]  text-white">Learn More</button>
                         </div>
-                        <div className="w-[100%]  xl:w-[30%] md:h-[50%] xl:h-[90%] ">
+                        <div className="w-[100%]  xl:w-[30%] md:h-[50%] xl:h-[90%] hidden3 ">
                            <Image src={heromage} 
                            className="w-[100%] h-[100%] xl:h-[100%] object-fit  "
                         
                            />
                         </div>
-                        <div className=" w-[100%]  xl:w-[28%] md:h-[100%] ">
+                        <div className=" w-[100%]  xl:w-[28%] md:h-[100%]  hidden3">
                         <Image src={IMGs} 
                            className=" w-[100%] h-[100%]  xl:h-[90%] object-fit "
                          
@@ -75,12 +86,12 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-[350vh] px-10 md:h-[200vh] xl:h-[100vh] flex justify-center x ">
+                <div className="w-full h-[350vh] px-10 md:h-[200vh] lg:h-[150vh] xl:h-[100vh] flex justify-center x ">
                     <div className=" w-[100%] md:w-full xl:w-[85%] h-[90vh] flex justify-around items-center  flex-wrap md:gap-10 xl:gap-2  ">
                     <div className="h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[100%] md:w-[22rem] xl:w-[22rem] flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:shadow-xl hover:animate-pulse  h-[10vh] duration-300 ease-in-out ">
-                                 <FaLandmarkDome  style={{ color:"#112356",fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                                 <FaLandmarkDome  style={{ color:"#c72626",fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                         </div>
                         <div className="flex flex-col">
@@ -99,7 +110,7 @@ export default function Header() {
                         <div className="h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
-                                 <FaRegBuilding  style={{color:"#112356", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                                 <FaRegBuilding  style={{color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                         </div>
                         <div className="flex flex-col">
@@ -118,7 +129,7 @@ export default function Header() {
                         <div className="h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex justify-start">
                         <div className=" flex ">
                             <div className="hover:animate-pulse  hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
-                                 <FaBook  style={{ color:"#112356",fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                                 <FaBook  style={{ color:"#c72626",fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                         </div>
                           <div className="flex flex-col">
@@ -137,7 +148,7 @@ export default function Header() {
                         <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className="hover:animate-pulse hover:shadow-xl  h-[10vh] uration-300 ease-in-out ">
-                                 <FaPerson  style={{ color:"#112356", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                                 <FaPerson  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
                                 <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
@@ -154,7 +165,7 @@ export default function Header() {
                         <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
-                                 <FaLandmark  style={{ color:"#112356", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                                 <FaLandmark  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
                                 <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
@@ -171,7 +182,7 @@ export default function Header() {
                         <div className=" h-[60vh]  md:h-[45vh] xl:h-[40vh] w-[22rem] flex-col  flex justify-start">
                         <div className=" flex ">
                             <div className=" hover:animate-pulse hover:shadow-xl h-[10vh] uration-300 ease-in-out ">
-                                 <FaCube  style={{ color:"#112356", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
+                                 <FaCube  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
                                 <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
@@ -188,15 +199,15 @@ export default function Header() {
 
                     </div>
                 </div>
-                <div className="w-full h-[140vh]  flex justify-start items-center flex-col ">
+                <section className="w-full min-h-[250vh]  md:min-h-[140vh] lg:min-h-[120vh]  flex justify-start items-center flex-col gap-5">
                     <div className="w-[90%] h-[15vh] bg-[#c72626] mt-10">
                     </div>
-                    <div className="mt-10 h-[20vh] w-full flex items-center flex-col">
+                    <div className="mt-10 h-[30vh] w-full flex items-center flex-col">
                         <h1 className="text-[1.2rem] xl:text-[2rem]">Distinguished Honorary Fellows</h1>
                     </div>
-                    <div className=" w-full flex justify-center h-[30vh ] ">
-                        <div className="w-full flex justify-evenly gap-2">
-                            <ul className="flex gap-2 flex-col list-disc" >
+                    <div className=" w-[100%] flex justify-center h-[30vh]  ">
+                        <div className=" w-[90%] md:w-full xl:w-full flex justify-center xl:justify-center gap-20 md:flex-col xl:flex-row">
+                            <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col   list-disc opacity-[60%]" >
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
 
@@ -225,8 +236,8 @@ export default function Header() {
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
 
 
-                            </ul>
-                            <ul className="flex gap-2 flex-col list-disc" >
+                            </div>
+                            <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col   list-disc opacity-[60%]" >
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
 
@@ -255,11 +266,49 @@ export default function Header() {
                                 <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
 
 
-                            </ul>
+                            </div>
                         </div>
                     </div>
                  
-                </div>
+                </section>
+                <section className="w-full  flex flex-col items-center">
+                    <div className="w-[90%] h-[15vh] bg-[#c72626]">
+                    </div>
+                    <div className="w-[90%] h-[100vh] flex flex-col">   
+                    <div className="w-[90%] mt-10 ">
+                        <h1 className="text-[2.5rem]">Events</h1>
+                    </div>
+                    <div className="w-[90%] flex mt-10 gap-10">
+                    <div className="relative w-full max-w-sm overflow-hidden shadow-lg cursor-pointer group">
+                        <Image
+                            className="w-full h-[50vh] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                            src={IMGs}
+                            alt="Seminar On Low Cost Housing"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                            <div className="text-center p-4">
+                            <p className="text-sm text-black  mb-2">DECEMBER 10, 2022</p>
+                            <h2 className="text-xl font-bold text-black">Seminar On Low Cost Housing</h2>
+                            </div>
+                        </div>
+                        </div>  
+                        <div className="relative w-full max-w-sm overflow-hidden shadow-lg cursor-pointer group">
+                        <Image
+                            className="w-full h-[50vh] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                            src={heromage}
+                            alt="Seminar On Low Cost Housing"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                            <div className="text-center p-4">
+                            <p className="text-sm text-black mb-2">DECEMBER 10, 2022</p>
+                            <h2 className="text-xl font-bold text-black">Seminar On Low Cost Housing</h2>
+                            </div>
+                        </div>
+                        </div>                     
+                    </div>
+                    </div>  
+
+                </section>
             </div>
         );
         

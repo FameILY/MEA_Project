@@ -82,3 +82,71 @@
      transform: translate(17px,-3px) rotatez(45deg);
    
    }
+
+
+   /* Keyframes */
+@keyframes fade-up {
+  0%{
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+  }
+
+  100%{
+      opacity: 1;
+      transform: rotateY(0px) scale(1);
+  }
+}
+@keyframes fade-down {
+  0%{
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: rotateY(0px) scale(1);
+  }
+}
+/* $$ */
+
+/* OnScroll Animation  */
+.hidden{
+  opacity:0;
+  /* filter:blur(5px); */
+  transform:translateY(50px);
+  transition:all 1s;
+}
+.hidden2{
+    opacity:0;
+    /* filter:blur(5px); */
+    transform: translateX(-50%);
+    transition:all 1s;
+  }
+
+.hidden3{
+  opacity:0;
+  /* filter:blur(5px); */
+  transform: translateX(-100%);
+  transition:all 1s;
+  }
+
+.show{
+opacity:1;
+filter:blur(0);
+transform:translateY(0px);
+}
+
+.showleftSlider{
+
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0%);
+
+}
+
+.rightSlider{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0px);
+
+}
+/* ## */
