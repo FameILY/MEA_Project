@@ -13,7 +13,12 @@ import { FaCube } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa6";
 import { FaLandmark } from "react-icons/fa6";
 import { FaPerson } from "react-icons/fa6";
+<<<<<<< HEAD
 import OnScrollAnimation from "../app/OnScrollAnimmation"
+=======
+import OnScrollAnimation from "./OnScrollAnimmation";
+
+>>>>>>> d903ad35b2a2e109d95f5b3194f75d45959a7e8a
 const nunito = Nunito 
 ({ 
     subsets: [ 'latin'] ,
