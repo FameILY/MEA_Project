@@ -23,7 +23,7 @@
 /* HamBurger Icon */
 
 .HamBurgerIcon{
-    z-index: 30;
+    z-index: 50;
 }
 .label{
     display:flex;
@@ -157,3 +157,78 @@ transform:translateY(0px);
 
 }
 /* ## */
+
+
+.relative {
+  position: relative;
+}
+
+.group:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.h-13vh {
+  height: 13vh;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.hidden-xl {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .hidden-xl {
+      display: flex;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-text-red:hover {
+  color: #f87171; /* Tailwind red-400 */
+}
+
+.items-center {
+  align-items: center;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem; /* Tailwind w-60 */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* Tailwind bg-white */
+  border: 1px solid #e5e7eb; /* Tailwind border-gray-200 */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Tailwind shadow-lg */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 50;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1.5rem; /* Tailwind px-6 py-3 */
+  border-bottom: 1px solid #e5e7eb; /* Tailwind border-b border-gray-200 */
+}
+
+.dropdown-link:hover {
+  background-color: #f3f4f6; /* Tailwind hover:bg-gray-100 */
+}

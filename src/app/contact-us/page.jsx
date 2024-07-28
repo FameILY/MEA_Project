@@ -32,17 +32,27 @@ export default function page() {
           <p className="text-lg p-3"> Home / Contact Us</p>
         </section>
         <section className="md:mx-32 ">
-          <section className="flex md:flex-row flex-col w-full justify-center items-center my-20">
-            <div className="hidden2 h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
-                <h1 className="text-3xl m-6">Call us</h1>
-                <p className="text-lg">(022) 23098063</p>
+          <section className="flex md:flex-row flex-col w-full justify-center items-center my-20 ">
+            <div className="hidden2 h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white  flex group shadow-xl hover:translate-y-[-2rem] transition-transform duration-300 transform  cursor-pointer  ">
+              <div className="flex w-full gap-2   flex-col justify-center items-center">
+              <h1 className="text-3xl m-6">Call us</h1>
+              <p className="text-lg">(022) 23098063</p>
+              </div>
+               
             </div>
-            <div className=" hidden3 h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white p-10 flex flex-col justify-center items-center">
-                <h1 className="text-3xl m-6">Visit us here</h1>
-                <p className="text-lg">237-239, Bal Dandavate Smruti, Bawla Masjid, Joshi Marg, Dilai Road, Mumbai-400013</p>
+            <div className="hidden2 h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white  flex group shadow-xl hover:translate-y-[-2rem] transition-transform duration-300 transform  cursor-pointer  ">
+              <div className="flex w-full gap-2   flex-col justify-center items-center py-5 px-7">
+              <h1 className="text-3xl m-6">Visit us here</h1>
+              <p className="text-[0.9rem]">237-239, Bal Dandavate Smruti, Bawla Masjid, Joshi Marg, Dilai Road, Mumbai-400013</p>
+              </div>
+               
             </div>
-            <div className=" hidden4 h-60 md:w-96 w-80 bg-[#c72626] m-5">
-
+            <div className="hidden2 h-60 md:w-96 w-80 bg-[#c72626] m-5 text-white  flex group shadow-xl hover:translate-y-[-2rem] transition-transform duration-300 transform  cursor-pointer  ">
+              <div className="flex w-full gap-2   flex-col justify-center items-center py-5 px-7">
+              <h1 className="text-3xl m-6">Mail Us</h1>
+              <p className="text-[0.9rem]">Submit the Form</p>
+              </div>
+               
             </div>
           </section>
           <section className="flex flex-col md:flex-row w-full justify-around items-center hidden3 my-20">

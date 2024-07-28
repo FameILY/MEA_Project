@@ -13,7 +13,7 @@ import { FaBook } from "react-icons/fa6";
 import { FaLandmark } from "react-icons/fa6";
 import { FaPerson } from "react-icons/fa6";
 import { FaLandmarkDome } from "react-icons/fa6";
-import OnScrollAnimation from "./OnScrollAnimmation";
+import OnScrollAnimation from "../Components/OnScrollAnimmation";
 
 const nunito = Nunito 
 ({ 
@@ -99,11 +99,11 @@ export default function Header() {
                                  <FaLandmarkDome  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
+                                <h3 className="text-[1.2rem] ml-2">Background Of Municipal Engineer Association</h3>
                             </div>
                         </div>
                         <div className="mt-5">
-                            <p>Our Freedom movement gathered momentum in the early thirties and brought about a new awakening amongst the Freedom seeking inteligentsia.</p>
+                            <p> It is an established fact that some engineers who run businesses under the name of Brihanmumbai Engineers Union become active in December by showing false promises.</p>
                         </div>  
                         <div>
                             <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
@@ -133,11 +133,11 @@ export default function Header() {
                                  <FaBook  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2"> Of The India Society Of Engineers</h3>
+                                <h3 className="text-[1.2rem] ml-2"> Recognition and Affiliation </h3>
                             </div>
                         </div>
                         <div className="mt-5">
-                            <p>Our Freedom movement gathered momentum in the early thirties and brought about a new awakening amongst the Freedom seeking inteligentsia.</p>
+                            <p>Social Security and Rights: MEU ensures social security for engineers by designing social security schemes and resolving their issues.</p>
                         </div>  
                         <div>
                             <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
@@ -150,11 +150,11 @@ export default function Header() {
                                  <FaPerson  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
+                                <h3 className="text-[1.2rem] ml-2">Contributing in Science and Technology</h3>
                             </div>
                         </div>
                         <div className="mt-5">
-                            <p>Our Freedom movement gathered momentum in the early thirties and brought about a new awakening amongst the Freedom seeking inteligentsia.</p>
+                            <p>Dispute Resolution: After attacks from municipal councilors, the organization provided support and pressured the administration to take action the 'Municipal Engineers Association'.</p>
                         </div>
                         <div>
                             <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
@@ -167,7 +167,7 @@ export default function Header() {
                                  <FaLandmark  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
+                                <h3 className="text-[1.2rem] ml-2">Future Of Municipal Engineer Association</h3>
                             </div>
                         </div>
                         <div className="mt-5">
@@ -184,7 +184,7 @@ export default function Header() {
                                  <FaCube  style={{ color:"#c72626", fontSize: '6rem', background:"white", padding:"1.2rem"}} />
                             </div>
                             <div className="flex h-[12vh]  py-10 items-center">
-                                <h3 className="text-[1.2rem] ml-2">Background Of The India Society Of Engineers</h3>
+                                <h3 className="text-[1.2rem] ml-2">Participation and Appreciation</h3>
                             </div>
                         </div>
                         <div className="mt-5">
@@ -199,71 +199,80 @@ export default function Header() {
                     </div>
                 </div>
                 <section className=" hidden1 w-full min-h-[270vh]  md:min-h-[140vh] lg:min-h-[120vh]  flex justify-start items-center flex-col gap-5">
-                    <div className="w-[90%] h-[15vh] bg-[#c72626] mt-10">
+                    
+                    <div className="w-[90%] h-[15vh] bg-[#c72626] flex justify-center items-center mt-10">
+                    <h1 className="text-[1.2rem] xl:text-[2rem] text-white ">Distinguished Honorary Fellows</h1>
+
                     </div>
                     <div className="mt-10 h-[30vh] w-full flex items-center flex-col">
-                        <h1 className="text-[1.2rem] xl:text-[2rem]">Distinguished Honorary Fellows</h1>
+                        <h2 className="text-[1rem] xl:text-[1.3rem]">67 years of tradition of faith!! An organization that protects life!</h2>
                     </div>
                     <div className=" w-[100%] flex justify-center h-[30vh]  ">
                         <div className=" w-[90%] md:w-full xl:w-full flex justify-center xl:justify-center gap-20 md:flex-col xl:flex-row">
                             <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col hidden2   list-disc opacity-[60%]" >
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Adv. Mahabal Shetty - President /General Secretary</li>
+                                <li>Engr. Vijay Pachpande - Vice Present</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Ramesh Malviya - Vice President</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Ramesh Kurhade - Secretary</li>
+                                <li> Engr. Ramesh Kurhade - Secretary</li>
+                                <li>Engr. T.V. Shah - Founder Member</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Jeevan Patil - Vice presidet</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Rajendra Joshi - Vice resident</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Satish Kumar Vani Vice - President</li>
+                                <li>Engr. Jagannath Gavane - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Navnath Ghadge- Executive Chairman</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>
+                                Engr. Vishal Kokate - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Yashpal Hungergekar - Secretary</li>
+                                <li>Engr. Yashpal Hungergekar - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Rajendra Joshi - Vice resident</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>
+                                Engr. Rajendra Joshi - Vice resident</li>
 
 
                             </div>
                             <div className="flex text-[0.8rem] xl:text-[1rem] gap-2 flex-row justify-center flex-wrap xl:flex-nowrap xl:flex-col hidden3  list-disc opacity-[60%]" >
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Rajendra Joshi - Vice resident</li>
+                                <li>Engr. Vishal Kokate - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Vishal Kokate - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Vishal Kokate - Secretary</li>
+                                <li>Engr. Navnath Ghadge- Executive Chairman</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>
+                                Engr. Vishal Kokate - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Yashpal Hungergekar - Secretary</li>
+                                <li>Engr. Yashpal Hungergekar - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Rajendra Joshi - Vice resident</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>
+                                Engr. Rajendra Joshi - Vice resident</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Navnath Ghadge- Executive Chairman</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>
+                                Engr. Vishal Kokate - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Yashpal Hungergekar - Secretary</li>
+                                <li>Engr. Yashpal Hungergekar - Secretary</li>
 
-                                <li>Bharat Ratna Sir C. V. Raman (1948), Nobel Laureate & Scientist</li>
+                                <li>Engr. Rajendra Joshi - Vice resident</li>
 
+                                <li>
+                                Engr. Rajendra Joshi - Vice resident</li>
 
                             </div>
                         </div>
@@ -271,7 +280,8 @@ export default function Header() {
                  
                 </section>
                 <section className="w-full  flex flex-col items-center">
-                    <div className="w-[90%] h-[15vh] bg-[#c72626]">
+                    <div className="w-[90%] h-[15vh] bg-[#c72626]  items-center justify-center flex">
+                    <h1 className="text-[2.5rem] text-white  ">Municipal Engineer Association</h1>
                     </div>
                     <div className="w-[90%] h-[100vh] flex flex-col">   
                     <div className="w-[90%] mt-10 ">

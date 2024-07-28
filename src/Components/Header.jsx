@@ -86,58 +86,62 @@ export default function Header() {
                         <Link href={'/'}>
                             <h2 className="cursor-pointer hidden xl:flex">Home</h2>
                         </Link>
-                    <div className="relative group h-[13vh]  items-center hidden xl:flex">
-                        <h3 className="flex cursor-pointer hover:text-red-400 items-center">
-                            About Us <span className="p-1"><IoIosArrowDown /></span>
-                        </h3>
-                        <ul className="absolute top-full left-1/2 transform -translate-x-1/2  w-60 flex flex-col bg-white border border-gray-200 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out z-50">
-                            <li className="border-b border-gray-200">
-                                <Link href="background-of-mea" className="block px-6 py-3 hover:bg-gray-100">Background of MEA</Link>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <Link href="objectives" className="block px-6 py-3 hover:bg-gray-100">Objectives</Link>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <Link href="recognition-and-affiliation" className="block px-6 py-3 hover:bg-gray-100">Recognition and Affiliation</Link>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Option 4</Link>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Option 5</Link>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <Link href="#" className="block px-6 py-3 hover:bg-gray-100">Option 6</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="relative group h-[13vh]  items-center hidden xl:flex">
-                        <h3 className="flex cursor-pointer hover:text-red-400 items-center">
-                            Members<span className="p-1"><IoIosArrowDown /></span>
-                        </h3>
-                        <ul className="absolute top-full left-1/2 transform -translate-x-1/2  w-60 flex flex-col bg-white border border-gray-200 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out z-50">
-                            <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 1</a>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 2</a>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 3</a>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 4</a>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 5</a>
-                            </li>
-                            <li className="border-b border-gray-200">
-                                <a href="#" className="block px-6 py-3 hover:bg-gray-100">Option 6</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="relative group h-13vh items-center hidden-xl">
+                            <h3 class="flex cursor-pointer hover-text-red items-center">
+                                About Us <span class="p-1"><IoIosArrowDown /></span>
+                            </h3>
+                            <ul class="dropdown-menu">
+                            <li>
+                                    <Link href="background-of-mea" class="dropdown-link">Background of MEA</Link>
+                                </li>
+                                <li>
+                                    <Link href="objectives" class="dropdown-link">Objectives</Link>
+                                </li>
+                                <li>
+                                    <Link href="recognition-and-affiliation" class="dropdown-link">Recognition and Affiliation</Link>
+                                </li>
+                                <li>
+                                    <Link href="distinguished-honorary-fellows" class="dropdown-link">Distinguished Honorary Fellows</Link>
+                                </li>
+                                <li>
+                                    <Link href="#" class="dropdown-link">Contributing in Science and Technology</Link>
+                                </li>
+                                <li>
+                                    <Link href="#" class="dropdown-link">Participation and Appreciation</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="relative group h-13vh items-center hidden-xl">
+                            <h3 class="flex cursor-pointer hover-text-red items-center">
+                                Members <span class="p-1"><IoIosArrowDown /></span>
+                            </h3>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <Link href="background-of-mea" class="dropdown-link">Background of MEA</Link>
+                                </li>
+                                <li>
+                                    <Link href="objectives" class="dropdown-link">Objectives</Link>
+                                </li>
+                                <li>
+                                    <Link href="recognition-and-affiliation" class="dropdown-link">Recognition and Affiliation</Link>
+                                </li>
+                                <li>
+                                    <Link href="distinguished-honorary-fellows" class="dropdown-link">Distinguished Honorary Fellows</Link>
+                                </li>
+                                <li>
+                                    <Link href="#" class="dropdown-link">Contributing in Science and Technology</Link>
+                                </li>
+                                <li>
+                                    <Link href="#" class="dropdown-link">Participation and Appreciation</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <Link href={'/events'}>
                         <h3 className="cursor-pointer	hidden xl:flex">Events</h3>
+                        </Link>
+                        <Link href={'/gallery'}>
                         <h3 className="cursor-pointer	hidden xl:flex">Gallery</h3>
+                        </Link>
                         <Link href={'/contact-us'}>
                         <h3 className="cursor-pointer	hidden xl:flex">Contact Us</h3>
                         </Link>
@@ -155,6 +159,7 @@ export default function Header() {
                         <span className="span"></span>
                     </label>
                     </div>
+                    
                 </div>
             </div>
         );
