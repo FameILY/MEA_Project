@@ -232,3 +232,148 @@ transform:translateY(0px);
 .dropdown-link:hover {
   background-color: #f3f4f6; /* Tailwind hover:bg-gray-100 */
 }
+
+.Sub-SideNav-on-click{
+  display: none;
+}
+.Sub-SideNav{
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .Sub-SideNav{
+    z-index:20;
+    bottom:0.1em;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background: #c72626;
+    box-shadow:var(--showdow-box);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+  }
+  
+  
+  .Sub-SideNav-on-click{
+    z-index:20;
+    bottom:0.1em;
+    left: 50%;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background: #c72626;
+    box-shadow:var(--showdow-box);
+    transition: all ease-in 500ms;
+  }
+  
+  
+  .menuItems{
+    display: flex;
+    flex-direction: column;;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--base-text-clr);
+  
+    
+   
+  }
+}
+
+
+@media (min-width: 768px) {
+  .Sub-SideNav{
+    z-index:20;
+    bottom:0.1em;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background: #c72626;
+    box-shadow:var(--showdow-box);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+  }
+  
+  
+  .Sub-SideNav-on-click{
+    z-index:20;
+    bottom:0.1em;
+    left: 50%;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background: #c72626;
+    box-shadow:var(--showdow-box);
+    transition: all ease-in 500ms;
+  }
+  
+  
+  .menuItems{
+    display: flex;
+    flex-direction: column;;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--base-text-clr);
+  
+    
+   
+  }
+}
+
+
+@media (min-width: 300px) {
+  .Sub-SideNav{
+    z-index:20;
+    bottom:0.1em;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background: #c72626;
+    box-shadow:var(--showdow-box);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+  }
+  
+  
+  .Sub-SideNav-on-click{
+    z-index:20;
+    bottom:0.1em;
+    left: 50%;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background: #c72626;
+    box-shadow:var(--showdow-box);
+    transition: all ease-in 500ms;
+  }
+  
+  
+  .menuItems{
+    display: flex;
+    flex-direction: column;;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--base-text-clr);
+  
+    
+   
+  }
+}
+

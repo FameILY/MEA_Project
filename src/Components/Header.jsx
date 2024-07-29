@@ -13,6 +13,7 @@ export default function Header() {
     const [active, setActive] = useState(false);
 
 
+
     useEffect(() => {
 
         if (typeof document !== 'undefined') {
@@ -46,9 +47,9 @@ export default function Header() {
     
         return(
             <div className="HeaderContainer   shadow-lg  w-full flex flex-col text-white bg-white">
-                <div className="NavContainer hidden  header-section w-full h-[4vh] bg-[#c72626]   justify-between justify-items-center items-center xl:flex ">
+                <div className="NavContainer hidden w-full h-[4.2vh] bg-[#c72626]   justify-between justify-items-center items-center xl:flex ">
                     <div className="flex  justify-center pl-10">
-                        <h4 className="text-white text-[0.8rem] ">Welcome To Municipal Engineer Association</h4>
+                        <h4 className="text-white text-[0.9rem] font-bold ">Welcome To Municipal Engineer Association</h4>
                     </div>
                         <div className=" flex justify-end items-center  pr-10  gap-5">
                             <div className="flex justify-center gap-1">
@@ -71,8 +72,8 @@ export default function Header() {
                         </div>
                          
                 </div>
-                <div className="HeaderContent h-[13vh]   w-[100%] bg-white flex justify-start justify-items-center ">
-                    <div className="flex w-[90%] bg-white justify-start justify-items-center h-[12vh] ">
+                <div className="HeaderContent h-[12vh]   header-section  w-[100%] bg-white flex justify-center items-center ">
+                    <div className="flex w-[100%] bg-white justify-start justify-items-center h-[12vh] ">
                     <div className="flex  ">
                         <Image 
                             src={LOGO}
@@ -81,7 +82,7 @@ export default function Header() {
                             height={100}
                         />
                     </div>
-                    <div className=" justify-center h-[13vh]  sm:flex items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
+                    <div className=" justify-center h-[12vh]  sm:flex items-center gap-8 text-black w-[90%] text-[1rem] font-medium xl:flex 	" >
                         <Link href={'/'}>
                             <h2 className="cursor-pointer hidden xl:flex">Home</h2>
                         </Link>
@@ -158,9 +159,31 @@ export default function Header() {
                         <span className="span"></span>
                     </label>
                     </div>
+                    <div className={active ? "Sub-SideNav-on-click":"Sub-SideNav "}>
+                <div className="menuItems">
+                    <li>
+                        <h4>Home</h4>
+                    </li>
+                    <li>
+                        <h4>About</h4>
+                    </li>
+                    <li>
+                        <h4>Portfolio</h4>
+                    </li>
+                    <li>
+                        <h4>Contact</h4>
+                    </li>
+                    {/* <div>
+                        <div onClick={DarkTheme} className="ThemeIcons"> 
+                        <div id="themeicons" className="gg-moon"></div>
+                        </div>
+                    </div> */}
+                </div>
+            </div>
+            
+        
 
-                
-
+    
                     
                 </div>
                 
