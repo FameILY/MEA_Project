@@ -7,7 +7,7 @@ import LOGO from "../Assets/LOGOS/logoMEA.png"
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
 import OnScrollAnimation from "../Components/OnScrollAnimmation";
-
+import GoogleTranslate from "../Components/gtranslate/gtrans"
 
 export default function Header() {
     const [active, setActive] = useState(false);
@@ -146,6 +146,11 @@ export default function Header() {
                         <h3 className="cursor-pointer	hidden xl:flex">Member Registration</h3>
                         </Link>
 
+                        <div>
+                            <GoogleTranslate/>
+                        </div>
+                        
+
                     </div>
                     </div>
                     <div className="HamBurgerIcon flex justify-center h-[13vh] justify-items-center pr-7 xl:hidden" onChange={() => setActive(!active)}>
@@ -156,9 +161,18 @@ export default function Header() {
                         <span className="span"></span>
                     </label>
                     </div>
+
+                
+
                     
                 </div>
+                
             </div>
+
+            
+
+        
         );
+        
         
     };
