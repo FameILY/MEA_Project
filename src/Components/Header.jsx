@@ -52,8 +52,7 @@ export default function Header() {
                     </div>
                         <div className=" flex justify-end items-center  pr-10  gap-5">
                             <div className="flex justify-center gap-1">
-                          
-                            <div className="flex  justify-center">          
+                            <div className="flex  justify-center">             
                             <span className="p-1"><FaLocationDot /></span> <h5 className="text-white text-[0.8rem]"> example@gmail.com</h5>
                             </div>
                             </div>
@@ -144,12 +143,10 @@ export default function Header() {
                         </Link>
                         <Link href={'/members-registration'}>
                         <h3 className="cursor-pointer	hidden xl:flex">Member Registration</h3>
-                        </Link>
-
+                        </Link>    
                         <div>
-                            <GoogleTranslate/>
-                        </div>
-                        
+                        <GoogleTranslate/>    
+                        </div>                  
 
                     </div>
                     </div>
