@@ -117,22 +117,19 @@ export default function Header() {
                             </h3>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <Link href="background-of-mea" class="dropdown-link">Background of MEA</Link>
+                                    <Link href="#" class="dropdown-link">Designation1</Link>
                                 </li>
                                 <li>
-                                    <Link href="objectives" class="dropdown-link">Objectives</Link>
+                                    <Link href="#" class="dropdown-link">Designation2</Link>
                                 </li>
                                 <li>
-                                    <Link href="recognition-and-affiliation" class="dropdown-link">Recognition and Affiliation</Link>
+                                    <Link href="#" class="dropdown-link">Designation3</Link>
                                 </li>
                                 <li>
-                                    <Link href="distinguished-honorary-fellows" class="dropdown-link">Distinguished Honorary Fellows</Link>
+                                    <Link href="#" class="dropdown-link">Designation4</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" class="dropdown-link">Contributing in Science and Technology</Link>
-                                </li>
-                                <li>
-                                    <Link href="#" class="dropdown-link">Participation and Appreciation</Link>
+                                    <Link href="#" class="dropdown-link">Designation5</Link>
                                 </li>
                             </ul>
                         </div>

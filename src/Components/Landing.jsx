@@ -154,7 +154,7 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="mt-5">
-                            <p>Dispute Resolution: After attacks from municipal councilors, the organization provided support and pressured the administration to take action the 'Municipal Engineers Association'.</p>
+                            <p>Dispute Resolution: After attacks from municipal councilors, the organization provided support and pressured the administration to take action the 'Municipal Engineers Association.</p>
                         </div>
                         <div>
                             <button className="py-2 px-5 bg-[#c72626] text-white mt-5">Learn More </button>
