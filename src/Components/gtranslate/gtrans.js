@@ -3,24 +3,30 @@ import Head from 'next/head';
 
 const GoogleTranslate = () => {
   useEffect(() => {
-    const addGoogleTranslateScript = () => {
+    const addScript = () => {
       const script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      script.async = true;
       document.body.appendChild(script);
     };
-    
-    if (!window.googleTranslateElementInit) {
-      window.googleTranslateElementInit = () => {
-        new window.google.translate.TranslateElement(
-          { pageLanguage: 'en' },
-          'google_translate_element'
-        );
-      };
-      addGoogleTranslateScript();
-    } else {
-      window.googleTranslateElementInit();
-    }
+
+
+
+    const initGoogleTranslate = () => {
+      if (!window.googleTranslateElementInit) {
+        window.googleTranslateElementInit = () => {
+          new window.google.translate.TranslateElement(
+            { pageLanguage: 'en' },
+            'google_translate_element'
+          );
+        };
+      }
+    };
+  
+
+    addScript();
+    initGoogleTranslate();
+
   }, []);
 
   return (
