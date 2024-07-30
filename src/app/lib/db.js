@@ -36,7 +36,7 @@ export default async function executeQuery({ query, values }) {
 
     // Split queries by semicolons and filter out empty strings
     const queries = query.split(';').filter(Boolean);
-    console.log(queries);
+    // console.log(queries);
     const results = [];
 
     for (const q of queries) {
