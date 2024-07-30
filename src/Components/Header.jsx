@@ -86,50 +86,50 @@ export default function Header() {
                         <Link href={'/'}>
                             <h2 className="cursor-pointer hidden xl:flex">Home</h2>
                         </Link>
-                        <div class="relative group h-13vh items-center hidden-xl">
-                            <h3 class="flex cursor-pointer hover-text-red items-center">
-                                About Us <span class="p-1"><IoIosArrowDown /></span>
+                        <div className="relative group h-13vh items-center hidden-xl">
+                            <h3 className="flex cursor-pointer hover-text-red items-center">
+                                About Us <span className="p-1"><IoIosArrowDown /></span>
                             </h3>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                             <li>
-                                    <Link href="background-of-mea" class="dropdown-link">Background of MEA</Link>
+                                    <Link href="background-of-mea" className="dropdown-link">Background of MEA</Link>
                                 </li>
                                 <li>
-                                    <Link href="objectives" class="dropdown-link">Objectives</Link>
+                                    <Link href="objectives" className="dropdown-link">Objectives</Link>
                                 </li>
                                 <li>
-                                    <Link href="recognition-and-affiliation" class="dropdown-link">Recognition and Affiliation</Link>
+                                    <Link href="recognition-and-affiliation" className="dropdown-link">Recognition and Affiliation</Link>
                                 </li>
                                 <li>
-                                    <Link href="distinguished-honorary-fellows" class="dropdown-link">Distinguished Honorary Fellows</Link>
+                                    <Link href="distinguished-honorary-fellows" className="dropdown-link">Distinguished Honorary Fellows</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" class="dropdown-link">Contributing in Science and Technology</Link>
+                                    <Link href="#" className="dropdown-link">Contributing in Science and Technology</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" class="dropdown-link">Participation and Appreciation</Link>
+                                    <Link href="#" className="dropdown-link">Participation and Appreciation</Link>
                                 </li>
                             </ul>
                         </div>
-                        <div class="relative group h-13vh items-center hidden-xl">
-                            <h3 class="flex cursor-pointer hover-text-red items-center">
-                                Members <span class="p-1"><IoIosArrowDown /></span>
+                        <div className="relative group h-13vh items-center hidden-xl">
+                            <h3 className="flex cursor-pointer hover-text-red items-center">
+                                Members <span className="p-1"><IoIosArrowDown /></span>
                             </h3>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                                 <li>
-                                    <Link href="#" class="dropdown-link">Designation1</Link>
+                                    <Link href="#" className="dropdown-link">Designation1</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" class="dropdown-link">Designation2</Link>
+                                    <Link href="#" className="dropdown-link">Designation2</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" class="dropdown-link">Designation3</Link>
+                                    <Link href="#" className="dropdown-link">Designation3</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" class="dropdown-link">Designation4</Link>
+                                    <Link href="#" className="dropdown-link">Designation4</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" class="dropdown-link">Designation5</Link>
+                                    <Link href="#" className="dropdown-link">Designation5</Link>
                                 </li>
                             </ul>
                         </div>
@@ -142,7 +142,7 @@ export default function Header() {
                         <Link href={'/contact-us'}>
                         <h3 className="cursor-pointer	hidden xl:flex">Contact Us</h3>
                         </Link>
-                        <Link href={'/members-registration'}>
+                        <Link href={'/register'}>
                         <h3 className="cursor-pointer	hidden xl:flex">Member Registration</h3>
                         </Link>    
                         <div>
@@ -161,18 +161,40 @@ export default function Header() {
                     </div>
                     <div className={active ? "Sub-SideNav-on-click":"Sub-SideNav "}>
                 <div className="menuItems">
-                    <li>
+                    <Link href={'/'}>
                         <h4>Home</h4>
-                    </li>
-                    <li>
-                        <h4>About</h4>
-                    </li>
-                    <li>
-                        <h4>Portfolio</h4>
-                    </li>
-                    <li>
-                        <h4>Contact</h4>
-                    </li>
+                    </Link>
+                    <div className="relative group items-center ">
+                    <h3 >
+                    About us <span className="p-1"><IoIosArrowDown /></span>
+                    </h3>
+                    <ul className="dropdown-menu">
+                            <li>
+                                    <Link href="background-of-mea" className="dropdown-link">Background of MEA</Link>
+                                </li>
+                                <li>
+                                    <Link href="objectives" className="dropdown-link">Objectives</Link>
+                                </li>
+                                <li>
+                                    <Link href="recognition-and-affiliation" className="dropdown-link">Recognition and Affiliation</Link>
+                                </li>
+                                <li>
+                                    <Link href="distinguished-honorary-fellows" className="dropdown-link">Distinguished Honorary Fellows</Link>
+                                </li>
+                                <li>
+                                    <Link href="#" className="dropdown-link">Contributing in Science and Technology</Link>
+                                </li>
+                                <li>
+                                    <Link href="#" className="dropdown-link">Participation and Appreciation</Link>
+                                </li>
+                            </ul>
+                            </div>
+                    <Link href={'/contact-us'}>
+                        <h4>Contact us</h4>
+                    </Link>
+                    <Link href={'/register'}>
+                        <h4>member registration</h4>
+                    </Link>
                     {/* <div>
                         <div onClick={DarkTheme} className="ThemeIcons"> 
                         <div id="themeicons" className="gg-moon"></div>

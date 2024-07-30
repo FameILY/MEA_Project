@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import OnScrollAnimation from '../../../Components/OnScrollAnimmation';
+import Link from 'next/link';
 
 export default function RegisterForm() {
   useEffect(()=> {
@@ -54,7 +55,7 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen hidden1 ">
+    <div className="flex justify-center items-center min-h-screen hidden1 flex-col ">
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Member Register</h2>
         <div className="mb-4">
@@ -128,6 +129,14 @@ export default function RegisterForm() {
           Register
         </button>
       </form>
+      <div className='m-2'>
+        <p>Already have an account? <span className='text-blue-700'>
+          <Link href={'/login'}>
+          Login
+          </Link>
+
+          </span> </p>
+      </div>
     </div>
   );
 }
