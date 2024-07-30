@@ -4,55 +4,60 @@ import { useEffect, useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Page() {
+  const [Name, setName] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Number, setNumber] = useState("");
+  const [Address, setAddress] = useState("");
+  const [Message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
   const form = useRef();
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    number: "",
-    address: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm("service_d5hpehs", "template_oi2xykk", form.current, {
-        publicKey: "z8Dw4X9gamLOG7blh",
-      })
-      .then(
-        () => {
-          alert("SUCCESS!");
-          setFormData({
-            name: "",
-            email: "",
-            number: "",
-            address: "",
-            message: "",
-          });
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify({ Name, Email, Number, Address, Message }),
+        headers: {
+          "Content-Type": "application/json",
         },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      });
+      if (!res.ok) {
+        throw new Error("HTTP error!");
+      }
+      emailjs
+        .sendForm(
+          "service_d5hpehs",
+          "template_oi2xykk",
+          form.current,
+          "z8Dw4X9gamLOG7blh"
+        )
+        .then(
+          () => {
+            setName("");
+            setEmail("");
+            setNumber("");
+            setAddress("");
+            setMessage("");
+            alert("SUCCESSFUL SUBMITTED");
+          },
+          (error) => {
+            setError("Email sending failed. Please try again.");
+          }
+        );
+    } catch (error) {
+      setError("Failed to submit the form. Please try again.");
+    }
   };
 
   useEffect(() => {
     if (typeof document !== "undefined") {
       // will run in client's browser only
-      var hiddenElements1 = document.querySelectorAll(".hidden3");
-      var hiddenElements4 = document.querySelectorAll(".hidden4");
-      var hiddenElements2 = document.querySelectorAll(".hidden2");
-      var hiddenElements3 = document.querySelectorAll(".hidden");
+      const hiddenElements1 = document.querySelectorAll(".hidden3");
+      const hiddenElements4 = document.querySelectorAll(".hidden4");
+      const hiddenElements2 = document.querySelectorAll(".hidden2");
+      const hiddenElements3 = document.querySelectorAll(".hidden");
 
       OnScrollAnimation(hiddenElements1);
       OnScrollAnimation(hiddenElements4);
@@ -80,8 +85,8 @@ export default function Page() {
               <div className="flex w-full gap-2 flex-col justify-center items-center py-5 px-7">
                 <h1 className="text-3xl m-6">Visit us here</h1>
                 <p className="text-[0.9rem]">
-                  237-239, Bal Dandavate Smruti, Bawla Masjid, Joshi Marg,
-                  Dilai Road, Mumbai-400013
+                  237-239, Bal Dandavate Smruti, Bawla Masjid, Joshi Marg, Dilai
+                  Road, Mumbai-400013
                 </p>
               </div>
             </div>
@@ -100,43 +105,57 @@ export default function Page() {
                 Contact us via the contact form below with your idea.
               </p>
 
-              <form onSubmit={sendEmail} ref={form} className="flex flex-col space-y-4">
+              <form
+                onSubmit={sendEmail}
+                ref={form}
+                className="flex flex-col space-y-4"
+              >
                 <input
                   type="text"
                   name="Name"
-                  value={formData.name}
-                  onChange={handleChange}
+                  value={Name}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
                   placeholder="Your Name"
                   className="px-4 py-2 focus:outline-none border-b border-black"
                 />
                 <input
                   type="email"
                   name="Email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  value={Email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                   placeholder="Your Email"
                   className="px-4 py-2 focus:outline-none border-b border-black"
                 />
                 <input
                   type="tel"
                   name="Number"
-                  value={formData.number}
-                  onChange={handleChange}
+                  value={Number}
+                  onChange={(e) => {
+                    setNumber(e.target.value);
+                  }}
                   placeholder="Your Number"
                   className="px-4 py-2 focus:outline-none border-b border-black"
                 />
                 <input
                   type="text"
                   name="Address"
-                  value={formData.address}
-                  onChange={handleChange}
+                  value={Address}
+                  onChange={(e) => {
+                    setAddress(e.target.value);
+                  }}
                   placeholder="Your Address"
                   className="px-4 py-2 focus:outline-none border-b border-black"
                 />
                 <textarea
                   name="Message"
-                  value={formData.message}
-                  onChange={handleChange}
+                  value={Message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
                   placeholder="Message"
                   className="px-4 py-2 focus:outline-none border-b border-black h-32 resize-none"
                 />
@@ -146,6 +165,7 @@ export default function Page() {
                 >
                   Submit
                 </button>
+                {error && <p className="text-red-500 mt-2">{error}</p>}
               </form>
             </div>
             <div className="flex-1 flex justify-center items-center mx-4 hidden3">
@@ -163,6 +183,7 @@ export default function Page() {
           </section>
         </section>
       </main>
+
     </>
   );
 }
