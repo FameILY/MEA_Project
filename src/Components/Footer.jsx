@@ -1,5 +1,6 @@
 // npm i react-icons install this for react-icons
 
+import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 
@@ -22,28 +23,28 @@ export default function Footer() {
             </section>
             <section className=" p-10 h-full m-10 flex flex-col justify-center">
                 <h1>Quick Links</h1>
-                <br />
-                <ul className="text-sm text-lightText">
-                    <li className="p-2">Home</li>
-                    <li className="p-2">About</li>
-                    <li className="p-2">Contact</li>
-                    <li className="p-2">Register</li>
+                <br />  
+                <ul className="text-sm text-lightText flex flex-col">
+                    <Link href={'/'} className="p-2">Home</Link>
+                    <Link href={'/background-of-mea'} className="p-2">Background of MEA</Link>
+                    <Link href={'/contact-us'} className="p-2">Contact us</Link>
+                    <Link href={'/members-registration'} className="p-2">Members Registration</Link>
                 </ul>
             </section>
             <section className=" p-10 h-full m-10 flex flex-col justify-center">
                 <h1>Useful Links</h1>
                 <br />
-                <ul className="text-sm text-lightText">
-                    <li className="p-2">Objectives</li>
-                    <li className="p-2">Contribution</li>
-                    <li className="p-2">Lectures</li>
-                    <li className="p-2">Members</li>
+                <ul className="text-sm text-lightText flex flex-col">
+                    <Link href={'/'} className="p-2">Home</Link>
+                    <Link href={'/background-of-mea'} className="p-2">Background of MEA</Link>
+                    <Link href={'/contact-us'} className="p-2">Contact us</Link>
+                    <Link href={'/register'} className="p-2">Members Registration</Link>
                 </ul>
             </section>
         </section>
       <section className="p-5 h-16 bg-customGray flex justify-center items-center">
         <p className="text-white text-sm">
-          Municipal Engineer Association {d.getFullYear()}. Powered By <span class="text-blue-400">VPPCOE Consultancy</span>.
+          Municipal Engineer Association {d.getFullYear()}. Powered By <span className="text-blue-400">VPPCOE Consultancy</span>.
         </p>
       </section>
     </footer>
